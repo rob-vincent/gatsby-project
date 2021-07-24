@@ -8,12 +8,12 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@johndoe",
-    data: {
-      name: "john",
-      age: 24,
-    },
+    twitterUsername: "@john_smilga",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://rtizon-gatsby-github-deploy.netlify.app",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,5 +33,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
   ],
 }

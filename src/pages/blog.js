@@ -1,13 +1,14 @@
-import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import BlogList from "../components/Blog/BlogList"
 
 const blog = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.default.childImageSharp.fluid} />
+      <BlogList />
     </Layout>
   )
 }

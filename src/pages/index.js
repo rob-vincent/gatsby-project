@@ -6,11 +6,14 @@ import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from "../components/SEO"
 
 // for SASS, go to www.gatsby.com/plugins
 export default function Home({ data }) {
   return (
     <Layout>
+      <SEO title="Home" />
       <StyledHero home={true} img={data.default.childImageSharp.fluid}>
         <Banner
           title="continue exploring"
@@ -23,6 +26,7 @@ export default function Home({ data }) {
       </StyledHero>
       <About />
       <Services />
+      <FeaturedTours />
     </Layout>
   )
 }

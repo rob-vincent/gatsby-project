@@ -10,9 +10,6 @@ const getStaticData = graphql`
         title
         description
         author
-        data {
-          age
-        }
       }
     }
   }
